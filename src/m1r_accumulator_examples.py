@@ -44,26 +44,26 @@ Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher, Mark Hays,
 #          including the (r + 4) but not including the (s - 10),
 #          what expression would you use in the _____ below?
 #
-#            for k in range(_____):
+#            for k in range(s - 10 + r + 5):
 #
 #     e. The following code snippet attempts to return the number
 #          of integers from r to s, inclusive, whose cosines are positive.
 #          It has at least 5 distinct errors (one per line).  What are they?
 #
-#              for k in range(r - s):
-#                  count = 0
-#                  if math.cos(r) > 0:
-#                      count = 1
-#                  return count
+#              for k in range(s + 1 - r):
+#                  k = 0
+#                  if math.cos(r) < 0:
+#                      count = k + (math.cos(r) < 0)
+#                  return(count)
 #
 #     f. The code in the "graphics accumulation" example below includes:
 #            for _ in range(n):
-#        What does the   _   (underscore) mean?
+#        What does the   _   (underscore) mean? k
 #
 #     g. The code in the "graphics accumulation" example below includes:
 #
 #              x = starting_point.x
-#              for _ in range(n):
+#              for k in range(n):
 #                  center = rg.Point(x, y)
 #                  circle = rg.Circle(point, radius)
 #                  circle.attach_to(window)
@@ -76,7 +76,7 @@ Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher, Mark Hays,
 #
 #              x = starting_point.x
 #              for k in range(n):
-#                  center = rg.Point(x + (k * diameter), y)
+#                  center = rg.Point(x + (k * diameter), y)           this is right
 #                  circle = rg.Circle(point, radius)
 #                  circle.attach_to(window)
 #
