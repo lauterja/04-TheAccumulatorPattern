@@ -65,7 +65,9 @@ def run_test_sum_more_cosines():
     if answer != expected:
         print('       actual: answer', round(answer, 5))
     else:
-        print('       actual:  ', answer)
+        print('       actual:  ', answer
+
+
 
     # -------------------------------------------------------------------------
     # TODO: 2 (continued).
@@ -88,7 +90,6 @@ def run_test_sum_more_cosines():
     #     print('     actual:     ', round(answer, 5))
     # else:
     #     print('     actual:     ', answer)
-
 def sum_more_cosines(m, n):
     """
     What comes in:  Integers m and n, with m <= n.
@@ -103,11 +104,10 @@ def sum_more_cosines(m, n):
             cos(-4) + cos(-3) + cos(-2) + cos(-1) + cos(0) + cos(1)
          which is approximately 0.02082.
     """
-    x = n + 1 - m;
-    total = 0;
+    x = (n + 1) - m
+    total = 0
     for k in range(x):
         total = total + math.cos(k + m)
-    print(k+m)
     answer = total
     # -------------------------------------------------------------------------
     # TODO: 3. Implement and test this function.
