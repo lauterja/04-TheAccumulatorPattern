@@ -65,7 +65,7 @@ def run_test_sum_more_cosines():
     if answer != expected:
         print('       actual: answer', round(answer, 5))
     else:
-        print('       actual:  ', answer
+        print('       actual:  ', answer)
 
 
 
